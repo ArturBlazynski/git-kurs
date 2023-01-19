@@ -1,0 +1,33 @@
+git-kurs.html
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>getRandomElement-easy</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+
+    <button id="button" onclick="GFG_Fun()">click here</button>
+
+    <p
+      id="GFG_DOWN"
+      style="font-size: 24px; font-weight: bold; color: green"
+    ></p>
+
+    <script>
+      let up = document.getElementById("GFG_UP");
+      let down = document.getElementById("GFG_DOWN");
+
+      let arr = ["Mateusz", "Paweł", "Piotr", "Grześ", "Robert"];
+      function GFG_Fun() {
+        down.innerHTML = arr[Math.floor(Math.random() * arr.length)];
+      }
+    </script>
+  </body>
+</html>
